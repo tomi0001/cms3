@@ -26,6 +26,7 @@ class CreateUsersTable extends Migration
             $table->increments('id');
             $table->integer('id_users')->unique();
             $table->char('permission',1);
+            $table->string('page',30);
             $table->rememberToken();
             $table->timestamps();
         });
